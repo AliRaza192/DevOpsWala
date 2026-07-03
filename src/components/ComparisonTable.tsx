@@ -1,5 +1,4 @@
 import React from 'react';
-import {Check, X} from 'lucide-react';
 
 interface ComparisonRow {
   feature: string;
@@ -18,11 +17,11 @@ function CellValue({value}: {value: string | boolean}): React.JSX.Element {
   if (typeof value === 'boolean') {
     return value ? (
       <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-emerald-500/10 text-emerald-500">
-        <Check size={11} strokeWidth={3} />
+        &#10003;
       </span>
     ) : (
       <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-red-500/10 text-red-500">
-        <X size={11} strokeWidth={3} />
+        &#10007;
       </span>
     );
   }

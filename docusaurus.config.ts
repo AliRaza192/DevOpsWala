@@ -66,7 +66,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          href: 'https://github.com/devopswala/devopswala-platform',
+          href: 'https://github.com/AliRaza192/DevOpsWala',
           label: 'GitHub',
           position: 'right',
         },
@@ -87,7 +87,7 @@ const config: Config = {
         {
           title: 'Community',
           items: [
-            { label: 'GitHub', href: 'https://github.com/devopswala/devopswala-platform' },
+            { label: 'GitHub', href: 'https://github.com/AliRaza192/DevOpsWala' },
             { label: 'About', to: '/docs/about' },
           ],
         },

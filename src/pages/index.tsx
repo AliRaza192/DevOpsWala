@@ -12,8 +12,8 @@ const phases = [
   {phase: 3, title: 'Programming: Python + Bash', description: 'Type-driven Python, Bash scripting, YAML, testing, automation.', group: 'foundations'},
   {phase: 4, title: 'Cloud Fundamentals (AWS + Azure + GCP)', description: 'IAM, EC2, VPC, S3, Lambda, Azure DevOps, GCP awareness.', group: 'cloud'},
   {phase: 5, title: 'Docker & Containers', description: 'Dockerfile, Compose, multi-stage builds, registries.', group: 'cloud'},
+  {phase: 6, title: 'CI/CD: GitHub Actions + Azure DevOps', description: 'Pipelines, secret management, automated testing, deployments.', group: 'cloud'},
   {phase: 7, title: 'Kubernetes + Helm', description: 'Pods, Deployments, Services, Helm charts, RBAC, HPA.', group: 'cloud'},
-  {phase: 6, title: 'CI/CD: GitHub Actions + Azure DevOps', description: 'Pipelines, secret management, automated testing, deployments.', group: 'automation'},
   {phase: 8, title: 'Terraform + Ansible', description: 'IaC modules, remote state, playbooks, idempotency.', group: 'automation'},
   {phase: 9, title: 'GitOps + ArgoCD', description: 'Git as source of truth, ArgoCD sync, progressive delivery.', group: 'automation'},
   {phase: 10, title: 'DevSecOps', description: 'Trivy, SBOM, Kyverno, secret scanning, pipeline security.', group: 'security'},
@@ -70,8 +70,8 @@ export default function Home(): React.JSX.Element {
         <div className="max-w-[900px] mx-auto px-6">
           <ComparisonTable
             title="Traditional Learning vs DevOps Wala"
-            colA="Traditional"
-            colB="DevOps Wala"
+            colAHeader="Traditional"
+            colBHeader="DevOps Wala"
             rows={comparisonRows}
           />
         </div>
