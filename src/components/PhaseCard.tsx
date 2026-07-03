@@ -43,7 +43,7 @@ export default function PhaseCard({phase, title, description, group}: PhaseCardP
     18: '/docs/ultra-pro/overview',
   };
 
-  const path = docPaths[phase] || '/docs/intro';
+  const path = docPaths[phase] || '/docs/foundations/overview';
 
   return (
     <Link to={path} className="no-underline">

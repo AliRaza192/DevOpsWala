@@ -78,10 +78,18 @@ const config: Config = {
         {
           title: 'Learn',
           items: [
-            { label: 'DevOps Foundations', to: '/docs/foundations/' },
-            { label: 'Cloud & Containers', to: '/docs/docker/' },
-            { label: 'Automation & GitOps', to: '/docs/gitops/' },
-            { label: 'Agentic AI', to: '/docs/ai-foundations/' },
+            { label: 'Start Reading', to: '/docs/foundations/overview' },
+            { label: 'Roadmap', to: '/docs/roadmap' },
+            { label: 'Curriculum', to: '/docs/roadmap' },
+          ],
+        },
+        {
+          title: 'Phases',
+          items: [
+            { label: 'DevOps Foundations', to: '/docs/foundations/overview' },
+            { label: 'Cloud & Containers', to: '/docs/cloud/overview' },
+            { label: 'Agentic AI', to: '/docs/ai-foundations/overview' },
+            { label: 'Career & Mastery', to: '/docs/career/overview' },
           ],
         },
         {

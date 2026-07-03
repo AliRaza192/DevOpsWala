@@ -2,7 +2,7 @@ import React from 'react';
 
 const stats = [
   {value: '19', label: 'Phases'},
-  {value: '95', label: 'Incident Scenarios'},
+  {value: '95+', label: 'Incident Scenarios'},
   {value: '100%', label: 'Free'},
   {value: 'Roman Urdu', label: 'Language'},
 ];
