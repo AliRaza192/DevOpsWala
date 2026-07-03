@@ -1,0 +1,442 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ===== AgentFactory-matched Design Tokens ===== */
+
+:root {
+  /* shadcn/ui light mode tokens */
+  --background: 0 0% 100%;
+  --foreground: 0 0% 4%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 4%;
+  --primary: 214 85% 17%;
+  --primary-foreground: 160 40% 95%;
+  --secondary: 220 9% 94%;
+  --secondary-foreground: 0 0% 9%;
+  --muted: 0 0% 96%;
+  --muted-foreground: 0 0% 45%;
+  --accent: 0 0% 96%;
+  --accent-foreground: 0 0% 9%;
+  --destructive: 359 90% 50%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 90%;
+  --input: 0 0% 90%;
+  --ring: 0 0% 64%;
+  --radius: 0.4rem;
+
+  /* Docusaurus Infima overrides */
+  --ifm-color-primary: #002855;
+  --ifm-color-primary-dark: #00234c;
+  --ifm-color-primary-darker: #002147;
+  --ifm-color-primary-darkest: #001b3b;
+  --ifm-color-primary-light: #002d5e;
+  --ifm-color-primary-lighter: #002f63;
+  --ifm-color-primary-lightest: #003774;
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --ifm-heading-font-family: var(--ifm-font-family-base);
+  --ifm-font-size-base: 100%;
+  --ifm-line-height-base: 1.65;
+  --ifm-navbar-height: 3.75rem;
+  --ifm-global-spacing: 1rem;
+  --ifm-global-radius: 0.4rem;
+  --ifm-card-border-radius: 0.8rem;
+  --ifm-code-font-size: 87.5%;
+  --ifm-code-border-radius: 0.25rem;
+  --ifm-global-shadow-lw: 0 1px 2px 0 rgba(0,0,0,0.1);
+  --ifm-global-shadow-md: 0 5px 40px rgba(0,0,0,0.12);
+  --ifm-global-shadow-tl: 0 12px 28px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.1);
+  --ifm-hero-background-color: var(--ifm-background-color);
+  --ifm-hero-text-color: var(--ifm-font-color-base);
+  --ifm-navbar-search-input-background-color: rgba(0,0,0,0.05);
+  --ifm-color-content: #1c1e21;
+  --ifm-color-content-secondary: #1c1e21;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.06);
+  --doc-sidebar-width: 300px;
+}
+
+[data-theme='dark'] {
+  /* shadcn/ui dark mode tokens */
+  --background: 0 0% 0%;
+  --foreground: 0 0% 98%;
+  --card: 0 0% 2%;
+  --card-foreground: 0 0% 98%;
+  --primary: 216 68% 58%;
+  --primary-foreground: 160 40% 95%;
+  --secondary: 0 0% 10%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 0 0% 9%;
+  --muted-foreground: 0 0% 63%;
+  --accent: 0 0% 13%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 359 82% 62%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 100%;
+  --input: 0 0% 15%;
+  --ring: 0 0% 45%;
+
+  /* Docusaurus Infima dark overrides */
+  --ifm-color-primary: #4f91e2;
+  --ifm-color-primary-dark: #3982dc;
+  --ifm-color-primary-darker: #2e7ad9;
+  --ifm-color-primary-darkest: #1c66cf;
+  --ifm-color-primary-light: #65a0e8;
+  --ifm-color-primary-lighter: #72a8eb;
+  --ifm-color-primary-lightest: #9bbeef;
+  --ifm-font-color-base: #e3e3e3;
+  --ifm-font-color-base-inverse: #fff;
+  --ifm-color-content: #e3e3e3;
+  --ifm-color-content-secondary: #fff;
+  --ifm-background-color: #000000;
+  --ifm-background-surface-color: #060606;
+  --ifm-navbar-link-color: #f5f5f5;
+  --ifm-navbar-search-input-background-color: rgba(255,255,255,0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.06);
+}
+
+/* ===== Global Resets ===== */
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+/* ===== Navbar — AgentFactory style ===== */
+
+.navbar {
+  background: hsl(var(--background)) !important;
+  border-bottom: 1px solid hsl(var(--border));
+  backdrop-filter: none;
+  height: var(--ifm-navbar-height);
+}
+
+.navbar__title {
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: -0.02em;
+}
+
+[data-theme='dark'] .navbar {
+  background: #000000 !important;
+  border-bottom-color: rgba(255,255,255,0.1);
+}
+
+/* ===== Sidebar — AgentFactory style ===== */
+
+.menu__link {
+  border-radius: 0.35rem;
+  font-size: 0.875rem;
+  padding: 0.4rem 0.6rem;
+  transition: all 0.12s ease;
+  font-weight: 400;
+}
+
+.menu__link--active {
+  font-weight: 500;
+  background: hsl(var(--accent));
+}
+
+[data-theme='dark'] .menu__link--active {
+  background: rgba(79, 145, 226, 0.12);
+  color: var(--ifm-color-primary);
+}
+
+.menu__list-item-collapsible:hover {
+  background: transparent;
+}
+
+.categoryLinkLabel_FNpM {
+  font-weight: 500;
+}
+
+/* ===== Doc Content ===== */
+
+.markdown h1 {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.markdown h2 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  line-height: 1.3;
+}
+
+.markdown h3 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+/* ===== Code Blocks ===== */
+
+.prism-code {
+  border-radius: 0.35rem;
+  font-size: 0.8125rem;
+  line-height: 1.65;
+}
+
+/* ===== Hero Section — AgentFactory deep navy gradient ===== */
+
+.hero-section {
+  background: linear-gradient(135deg, #001a3a 0%, #002855 40%, #0d47a1 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  width: 60%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(79, 145, 226, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  right: -10%;
+  width: 40%;
+  height: 150%;
+  background: radial-gradient(circle, rgba(13, 71, 161, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+[data-theme='dark'] .hero-section {
+  background: linear-gradient(135deg, #000000 0%, #050510 40%, #0a0a1a 100%);
+}
+
+[data-theme='dark'] .hero-section::before {
+  background: radial-gradient(circle, rgba(79, 145, 226, 0.06) 0%, transparent 70%);
+}
+
+[data-theme='dark'] .hero-section::after {
+  background: radial-gradient(circle, rgba(79, 145, 226, 0.04) 0%, transparent 70%);
+}
+
+/* ===== Stats Bar — AgentFactory style ===== */
+
+.stats-bar {
+  border-top: 1px solid hsl(var(--border));
+  border-bottom: 1px solid hsl(var(--border));
+  background: hsl(var(--background));
+}
+
+[data-theme='dark'] .stats-bar {
+  border-color: rgba(255,255,255,0.1);
+  background: #000;
+}
+
+.stat-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: hsl(var(--foreground));
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: hsl(var(--muted-foreground));
+  margin-top: 0.25rem;
+}
+
+/* ===== Phase Cards — AgentFactory style ===== */
+
+.phase-card {
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--ifm-card-border-radius);
+  padding: 1.25rem;
+  transition: all 0.2s ease;
+  background: hsl(var(--card));
+}
+
+[data-theme='dark'] .phase-card {
+  background: #060606;
+  border-color: rgba(255,255,255,0.08);
+}
+
+.phase-card:hover {
+  border-color: hsl(var(--primary));
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12), 0 0 0 1px hsl(var(--primary) / 0.2);
+  transform: translateY(-1px);
+}
+
+[data-theme='dark'] .phase-card:hover {
+  box-shadow: 0 4px 20px rgba(79, 145, 226, 0.08), 0 0 0 1px rgba(79, 145, 226, 0.2);
+}
+
+/* ===== Comparison Table — AgentFactory style ===== */
+
+.comparison-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: var(--ifm-card-border-radius);
+  overflow: hidden;
+  border: 1px solid hsl(var(--border));
+  font-size: 0.875rem;
+}
+
+.comparison-table th {
+  background: hsl(var(--muted));
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  text-align: left;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.comparison-table td {
+  padding: 0.625rem 1rem;
+  border-top: 1px solid hsl(var(--border));
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+[data-theme='dark'] .comparison-table th {
+  background: rgba(255,255,255,0.04);
+}
+
+[data-theme='dark'] .comparison-table td {
+  border-top-color: rgba(255,255,255,0.06);
+}
+
+/* ===== Footer — AgentFactory style ===== */
+
+.footer--dark {
+  background: #000000;
+  border-top: 1px solid hsl(var(--border));
+}
+
+[data-theme='dark'] .footer--dark {
+  border-top-color: rgba(255,255,255,0.08);
+}
+
+.footer__title {
+  font-weight: 600;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.5;
+}
+
+.footer__link-item {
+  font-size: 0.875rem;
+  opacity: 0.6;
+  transition: opacity 0.15s ease;
+}
+
+.footer__link-item:hover {
+  opacity: 1;
+}
+
+/* ===== Copy Markdown Button ===== */
+
+.copy-markdown-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.375rem 0.625rem;
+  border-radius: 0.35rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.copy-markdown-btn:hover {
+  background: hsl(var(--accent));
+  border-color: hsl(var(--primary));
+}
+
+.copy-markdown-btn.copied {
+  border-color: hsl(142 71% 45%);
+  color: hsl(142 71% 45%);
+}
+
+/* ===== Scrollbar ===== */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== Admonitions ===== */
+
+.admonition {
+  border-radius: 0.4rem;
+  border-left-width: 3px;
+}
+
+/* ===== Table of Contents ===== */
+
+.table-of-contents__link {
+  font-size: 0.8125rem;
+  border-left: 2px solid transparent;
+}
+
+.table-of-contents__link--active {
+  border-left-color: var(--ifm-color-primary);
+  font-weight: 500;
+}
+
+/* ===== Buttons — AgentFactory style ===== */
+
+.button--primary {
+  background: hsl(var(--primary));
+  border-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  font-weight: 500;
+  box-shadow: 0 0 0 2px hsl(var(--background));
+}
+
+.button--primary:hover {
+  background: hsl(var(--primary) / 0.9);
+  border-color: hsl(var(--primary) / 0.9);
+}
+
+/* ===== Breadcrumbs ===== */
+
+.breadcrumbs__link {
+  font-size: 0.8125rem;
+}
