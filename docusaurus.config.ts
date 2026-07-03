@@ -61,6 +61,37 @@ const config: Config = {
           label: 'Docs',
         },
         {
+          type: 'dropdown',
+          label: 'Phases',
+          position: 'left',
+          items: [
+            {
+              label: '00-03 Foundations',
+              to: '/docs/foundations/',
+            },
+            {
+              label: '04-07 Cloud & Containers',
+              to: '/docs/cloud/',
+            },
+            {
+              label: '08-09 Automation & GitOps',
+              to: '/docs/terraform-ansible/',
+            },
+            {
+              label: '10-11 Security & Observability',
+              to: '/docs/devsecops/',
+            },
+            {
+              label: '12-16 Agentic AI',
+              to: '/docs/ai-foundations/',
+            },
+            {
+              label: '17-18 Career & Mastery',
+              to: '/docs/career/',
+            },
+          ],
+        },
+        {
           to: '/docs/roadmap',
           label: 'Roadmap',
           position: 'left',
