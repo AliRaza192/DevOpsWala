@@ -1,28 +1,41 @@
 ---
-sidebar_position: 1
-title: "Docker & Containers"
-description: "Dockerfile, Compose, multi-stage builds, registries"
+sidebar_position: 8
+title: "PHASE 5: Containerization — Docker + Compose"
+description: "*Est. Time: 3-4 weeks*"
 ---
 
-# Docker & Containers
+# PHASE 5: Containerization — Docker + Compose
+*Est. Time: 3-4 weeks*
 
-> Phase 5 — Dockerfile, Compose, multi-stage builds, registries
+### Kya seekhna hai
+- Containers vs VMs, images, layers
+- Dockerfile best practices (multi-stage builds, caching, smaller images, alpine/distroless)
+- Docker Compose (multi-service apps)
+- Container networking, volumes (data persistence)
+- Registries (Docker Hub, ECR, ACR, GHCR)
 
-Ye phase abhi under development hai. Content jald hi aayega.
+### Free Resources
+| Resource | Link |
+|---|---|
+| **"Docker Tutorial for Beginners"** — TechWorld with Nana | https://www.youtube.com/@TechWorldwithNana |
+| **"Docker Crash Course"** — freeCodeCamp.org | https://www.youtube.com/@freecodecamp |
+| **Official Docker Docs** | https://docs.docker.com |
+| **Play with Docker (free interactive sandbox)** | https://labs.play-with-docker.com |
 
-## Kya Seekhna Hai
+### Hands-on Checklist
+- [ ] Multi-stage Dockerfile with &lt;100MB image
+- [ ] Docker Compose multi-service (app+DB) with healthchecks
+- [ ] Push to registry (ECR/ACR/GHCR)
+- [ ] Image size ko 1GB se &lt;100MB tak laao
 
-- Yahan pe is phase ke key topics honge
-- Har topic ke sath hands-on exercises honge
-- Real-world incident scenarios bhi honge
+### Incident Practice
+- Container exit ho jaye immediately → entrypoint/logs diagnose karo
+- Build fail ho missing dependency se → Dockerfile fix karo
+- Service dependency order issue → healthchecks + `depends_on` fix karo
 
-## Status
+### Meri Recommendation
+Islamic Banking FTE aur NexaBook ko Dockerize karna pehla hands-on project banao.
 
-:::info
-**Content Coming Soon** — Is phase ka detailed content jald hi upload kiya jayega.
-:::
+---
 
-## Quick Links
-
-- [Poora Roadmap Dekho](/docs/roadmap)
-- [Phase 0 se Shuru Karo](/docs/foundations/)
+*Back to [MERGED-ROADMAP.md](/docs/roadmap)*

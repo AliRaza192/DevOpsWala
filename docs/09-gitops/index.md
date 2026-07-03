@@ -1,28 +1,37 @@
 ---
-sidebar_position: 1
-title: "GitOps + ArgoCD"
-description: "Git as source of truth, ArgoCD sync, progressive delivery"
+sidebar_position: 12
+title: "PHASE 9: GitOps + Platform Engineering"
+description: "*Est. Time: 3-4 weeks*"
 ---
 
-# GitOps + ArgoCD
+# PHASE 9: GitOps + Platform Engineering
+*Est. Time: 3-4 weeks*
 
-> Phase 9 — Git as source of truth, ArgoCD sync, progressive delivery
+### Kya seekhna hai
+- GitOps principle: Git = single source of truth
+- **ArgoCD** (primary GitOps tool)
+- Progressive delivery: Canary, Blue-Green deployments
+- Platform Engineering: Internal Developer Platforms (IDPs), Golden Paths, Backstage
 
-Ye phase abhi under development hai. Content jald hi aayega.
+### Free Resources
+| Resource | Link |
+|---|---|
+| **"ArgoCD Tutorial"** — TechWorld with Nana | https://www.youtube.com/@TechWorldwithNana |
+| **Official ArgoCD Docs** | https://argo-cd.readthedocs.io |
+| **"Platform Engineering"** — DevOps Toolkit (Viktor Farcic) | https://www.youtube.com/@DevOpsToolkit |
 
-## Kya Seekhna Hai
+### Hands-on Checklist
+- [ ] ArgoCD install + repo connect + auto-sync
+- [ ] Canary deployment simulation
+- [ ] Self-service golden-path template
 
-- Yahan pe is phase ke key topics honge
-- Har topic ke sath hands-on exercises honge
-- Real-world incident scenarios bhi honge
+### Incident Practice
+- ArgoCD sync failure diagnose karo (repo/permission)
+- Cluster aur repo k beech drift reconcile karo
 
-## Status
+### Meri Recommendation
+GitOps se multiple bank tenants ka deployment automate ho sakta hai — directly tumhare multi-tenant SaaS roadmap k liye applicable.
 
-:::info
-**Content Coming Soon** — Is phase ka detailed content jald hi upload kiya jayega.
-:::
+---
 
-## Quick Links
-
-- [Poora Roadmap Dekho](/docs/roadmap)
-- [Phase 0 se Shuru Karo](/docs/foundations/)
+*Back to [MERGED-ROADMAP.md](/docs/roadmap)*

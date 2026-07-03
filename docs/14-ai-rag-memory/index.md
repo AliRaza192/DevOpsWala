@@ -1,28 +1,37 @@
 ---
-sidebar_position: 1
-title: "Agentic AI: RAG, Memory, Multi-Agent"
-description: "Vector DBs, pgvector, agent memory, A2A orchestration"
+sidebar_position: 17
+title: "PHASE 14: AGENTIC AI — RAG, Memory & Multi-Agent Systems"
+description: "*Est. Time: 4-5 weeks*"
 ---
 
-# Agentic AI: RAG, Memory, Multi-Agent
+# PHASE 14: AGENTIC AI — RAG, Memory & Multi-Agent Systems
+*Est. Time: 4-5 weeks*
 
-> Phase 14 — Vector DBs, pgvector, agent memory, A2A orchestration
+### Kya seekhna hai
+- RAG (Retrieval-Augmented Generation): embeddings, vector databases, chunking
+- Vector DBs: **pgvector (priority — tumhare Neon stack k liye)**, Pinecone, Chroma
+- Agent Memory: short-term (session) vs long-term (persistent)
+- Multi-agent orchestration: supervisor pattern, A2A (Agent-to-Agent)
+- Reflection/Reflexion architectures (self-improving agents)
 
-Ye phase abhi under development hai. Content jald hi aayega.
+### Free Resources
+| Resource | Link |
+|---|---|
+| **AgentFactory — "AI Searchable Context" (Postgres+AI)** | https://agentfactory.panaversity.org/docs/postgres-ai-crash-course |
+| **DeepLearning.AI — "LangChain: Chat with Your Data" (FREE)** | https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/ |
+| **DeepLearning.AI — "Long-Term Agentic Memory with LangGraph" (FREE)** | https://www.deeplearning.ai/courses |
+| **pgvector Official Docs** | https://github.com/pgvector/pgvector |
 
-## Kya Seekhna Hai
+### Hands-on Checklist
+- [ ] pgvector setup karo PostgreSQL mein
+- [ ] PDF documents chunk karo aur embed karo
+- [ ] Simple RAG pipeline banao (Query → Retrieve → Generate)
+- [ ] Persistent memory system implement karo
+- [ ] Human-in-the-loop approval add karo
 
-- Yahan pe is phase ke key topics honge
-- Har topic ke sath hands-on exercises honge
-- Real-world incident scenarios bhi honge
+### Meri Recommendation
+**Standalone vector DB (Pinecone) seekh kar complexity mat badhao** — pgvector se apne existing NeonDB stack mein hi RAG + long-term memory implement karo.
 
-## Status
+---
 
-:::info
-**Content Coming Soon** — Is phase ka detailed content jald hi upload kiya jayega.
-:::
-
-## Quick Links
-
-- [Poora Roadmap Dekho](/docs/roadmap)
-- [Phase 0 se Shuru Karo](/docs/foundations/)
+*Back to [MERGED-ROADMAP.md](/docs/roadmap)*

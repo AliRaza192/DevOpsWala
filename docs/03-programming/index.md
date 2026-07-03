@@ -1,28 +1,55 @@
 ---
-sidebar_position: 1
-title: "Programming: Python + Bash"
-description: "Type-driven Python, Bash scripting, YAML, testing, automation"
+sidebar_position: 6
+title: "PHASE 3: Programming — Python (Type-Driven) + Bash + TypeScript awareness"
+description: "*Est. Time: 4-6 weeks*"
 ---
 
-# Programming: Python + Bash
+# PHASE 3: Programming — Python (Type-Driven) + Bash + TypeScript awareness
+*Est. Time: 4-6 weeks*
 
-> Phase 3 — Type-driven Python, Bash scripting, YAML, testing, automation
+### Kyun Python primary hai
+DevOps automation, Agentic AI frameworks (LangChain, OpenAI SDK), aur AgentFactory sab Python-first hain.
 
-Ye phase abhi under development hai. Content jald hi aayega.
+### Kya seekhna hai
+- Syntax, data structures (list, dict, set, tuple)
+- Functions, modules, packages, virtual environments
+- File handling, error handling (`try/except/finally`)
+- OOP basics (classes, inheritance)
+- **Type Hints** (AI-era "type-driven development" — AgentFactory AI-251 ka core)
+- `asyncio` for async programming
+- Automation libraries: `subprocess, os, sys`
+- Web: `requests`, `BeautifulSoup`, `FastAPI`
+- Testing: `pytest`
+- Bash scripting: variables, loops, conditionals, functions, `set -e`, `set -x`
+- YAML basics (K8s/CI-CD ki zaban)
 
-## Kya Seekhna Hai
+### Free Resources
+| Resource | Link |
+|---|---|
+| **"Python for Everybody"** — Dr. Chuck / freeCodeCamp | https://www.youtube.com/@freecodecamp |
+| **"Python Full Course"** — Programming with Mosh | https://www.youtube.com/@programmingwithmosh |
+| **Official Python Docs** | https://docs.python.org/3/ |
+| **"Automate the Boring Stuff with Python"** | https://automatetheboringstuff.com |
+| **"Bash Scripting Full Course"** — freeCodeCamp.org | https://www.youtube.com/@freecodecamp |
+| **AgentFactory — "Python in the AI Era"** | https://agentfactory.panaversity.org/docs/python-crash-course |
+| **AgentFactory — "Code You Never Write"** | https://agentfactory.panaversity.org/docs/code-you-never-write-crash-course |
+| **FastAPI Official Docs** | https://fastapi.tiangolo.com |
 
-- Yahan pe is phase ke key topics honge
-- Har topic ke sath hands-on exercises honge
-- Real-world incident scenarios bhi honge
+### Hands-on Checklist
+- [ ] FastAPI service with async endpoints + pytest coverage
+- [ ] Log-parsing script with error handling
+- [ ] API integration with retry logic
+- [ ] Bash script with `set -e` for error handling
+- [ ] YAML parser banao jo K8s manifests validate kare
 
-## Status
+### Incident Practice
+- Bash script `set -x` se debug karo
+- Python API timeout/format error pe retries/validation implement karo
+- YAML indentation error find karo
 
-:::info
-**Content Coming Soon** — Is phase ka detailed content jald hi upload kiya jayega.
-:::
+### Meri Recommendation
+Chunke tum AI agents se code generate karwate ho, **deep coding se zyada type-driven thinking, code review, aur testing** pe focus do — AI ka output verify karna seekho.
 
-## Quick Links
+---
 
-- [Poora Roadmap Dekho](/docs/roadmap)
-- [Phase 0 se Shuru Karo](/docs/foundations/)
+*Back to [MERGED-ROADMAP.md](/docs/roadmap)*

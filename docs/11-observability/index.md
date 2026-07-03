@@ -1,28 +1,44 @@
 ---
-sidebar_position: 1
-title: "Observability + SRE + AIOps"
-description: "Prometheus, Grafana, OpenTelemetry, SLO/SLA, chaos engineering"
+sidebar_position: 14
+title: "PHASE 11: Observability + SRE + AIOps"
+description: "*Est. Time: 3-4 weeks*"
 ---
 
-# Observability + SRE + AIOps
+# PHASE 11: Observability + SRE + AIOps
+*Est. Time: 3-4 weeks*
 
-> Phase 11 — Prometheus, Grafana, OpenTelemetry, SLO/SLA, chaos engineering
+### Kya seekhna hai
+- **Prometheus** (metrics, PromQL, alerting)
+- **Grafana** (dashboards, visualization)
+- **OpenTelemetry** (metrics + logs + traces — 2026 ka primary standard)
+- ELK / Loki (logging)
+- SRE principles: SLO/SLA, error budgets
+- AIOps: anomaly detection basics
+- Chaos Engineering basics (Chaos Mesh, Litmus)
 
-Ye phase abhi under development hai. Content jald hi aayega.
+### Free Resources
+| Resource | Link |
+|---|---|
+| **"Prometheus & Grafana Full Course"** — TechWorld with Nana | https://www.youtube.com/@TechWorldwithNana |
+| **Official Prometheus Docs** | https://prometheus.io/docs |
+| **Official Grafana Docs + free Grafana Cloud tier** | https://grafana.com/docs |
+| **OpenTelemetry Official Docs** | https://opentelemetry.io/docs |
+| **Google SRE Book (100% free online)** | https://sre.google/books/ |
 
-## Kya Seekhna Hai
+### Hands-on Checklist
+- [ ] Prometheus + Grafana stack deploy karo
+- [ ] Custom metrics export karo (Python app se)
+- [ ] Distributed tracing setup karo (OTel)
+- [ ] Alert rule with threshold + firing test
 
-- Yahan pe is phase ke key topics honge
-- Har topic ke sath hands-on exercises honge
-- Real-world incident scenarios bhi honge
+### Incident Practice
+- Missing telemetry → exporter/config fix
+- Alert not firing → query/threshold correct karo
+- Production outage → logs+traces correlate karke RCA karo
 
-## Status
+### Meri Recommendation
+Google SRE Book zaroor parho — free aur authoritative. OpenTelemetry priority do — cost + latency visibility k liye.
 
-:::info
-**Content Coming Soon** — Is phase ka detailed content jald hi upload kiya jayega.
-:::
+---
 
-## Quick Links
-
-- [Poora Roadmap Dekho](/docs/roadmap)
-- [Phase 0 se Shuru Karo](/docs/foundations/)
+*Back to [MERGED-ROADMAP.md](/docs/roadmap)*

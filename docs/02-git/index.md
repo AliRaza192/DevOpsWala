@@ -1,28 +1,44 @@
 ---
-sidebar_position: 1
-title: "Git & Version Control"
-description: "Branching, merging, PRs, Git workflows, conflict resolution"
+sidebar_position: 5
+title: "PHASE 2: Git & Version Control"
+description: "*Est. Time: 1-2 weeks*"
 ---
 
-# Git & Version Control
+# PHASE 2: Git & Version Control
+*Est. Time: 1-2 weeks*
 
-> Phase 2 — Branching, merging, PRs, Git workflows, conflict resolution
+### Kya seekhna hai
+- Git basics: `init, add, commit, log, diff, revert, reset`
+- Branching & merging, rebase
+- Remote repos (GitHub, GitLab, Azure Repos)
+- Pull Requests, code review culture
+- Git workflows: Git Flow, GitHub Flow, Trunk-based development
+- Resolving merge conflicts
+- `.gitignore`, `git reflog` (recovery), Git hooks
 
-Ye phase abhi under development hai. Content jald hi aayega.
+### Free Resources
+| Resource | Link |
+|---|---|
+| **"Git and GitHub for Beginners"** — freeCodeCamp.org | https://www.youtube.com/@freecodecamp |
+| **"Git Tutorial for Beginners"** — Programming with Mosh | https://www.youtube.com/@programmingwithmosh |
+| **Official Git Docs (Pro Git Book — free)** | https://git-scm.com/book/en/v2 |
+| **GitHub Skills (free interactive)** | https://skills.github.com |
+| **Learn Git Branching (interactive visual tool)** | https://learngitbranching.js.org |
 
-## Kya Seekhna Hai
+### Hands-on Checklist
+- [ ] Overwritten changes recover via `reflog`
+- [ ] Feature branch → main merge with conflict resolution
+- [ ] PR opened with review + CI check pass
+- [ ] Fork karo kisi open source project ka
 
-- Yahan pe is phase ke key topics honge
-- Har topic ke sath hands-on exercises honge
-- Real-world incident scenarios bhi honge
+### Incident Practice
+- Overwritten changes recover karo `reflog`/`reset` se
+- Wrong branch pe kaam ho gaya ho to rebase karke fix karo
+- Merge conflict + failed CI ko resolve karo
 
-## Status
+### Meri Recommendation
+Sirf **Git Flow vs Trunk-based** ka conceptual difference aur **reflog recovery** practice kar lo — production mistakes mein ye life-saver hota hai.
 
-:::info
-**Content Coming Soon** — Is phase ka detailed content jald hi upload kiya jayega.
-:::
+---
 
-## Quick Links
-
-- [Poora Roadmap Dekho](/docs/roadmap)
-- [Phase 0 se Shuru Karo](/docs/foundations/)
+*Back to [MERGED-ROADMAP.md](/docs/roadmap)*

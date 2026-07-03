@@ -1,28 +1,37 @@
 ---
-sidebar_position: 1
-title: "DevSecOps"
-description: "Trivy, SBOM, Kyverno, secret scanning, pipeline security"
+sidebar_position: 13
+title: "PHASE 10: DevSecOps"
+description: "*Est. Time: 2-3 weeks*"
 ---
 
-# DevSecOps
+# PHASE 10: DevSecOps
+*Est. Time: 2-3 weeks*
 
-> Phase 10 — Trivy, SBOM, Kyverno, secret scanning, pipeline security
+### Kya seekhna hai
+- Secret scanning (Gitleaks, TruffleHog)
+- Image scanning (**Trivy**)
+- SBOM generation (**Syft/Grype**)
+- Policy-as-Code (**Kyverno**/OPA)
+- Pipeline security gates
+- SAST/DAST (SonarQube, OWASP ZAP)
+- Supply chain security (Cosign for signing)
 
-Ye phase abhi under development hai. Content jald hi aayega.
+### Free Resources
+| Resource | Link |
+|---|---|
+| **Trivy Official Docs** | https://trivy.dev |
+| **"DevSecOps Full Course"** — freeCodeCamp.org | https://www.youtube.com/@freecodecamp |
+| **Kyverno Official Docs** | https://kyverno.io |
+| **OWASP Free Resources** | https://owasp.org |
 
-## Kya Seekhna Hai
+### Hands-on Checklist
+- [ ] Trivy scan integrated in CI pipeline, fail on high-severity
+- [ ] SBOM generated with Syft
+- [ ] Kyverno policy blocking unsigned images
 
-- Yahan pe is phase ke key topics honge
-- Har topic ke sath hands-on exercises honge
-- Real-world incident scenarios bhi honge
+### Meri Recommendation
+Trivy ko apni CI/CD mein integrate karna concrete portfolio project ban sakta hai.
 
-## Status
+---
 
-:::info
-**Content Coming Soon** — Is phase ka detailed content jald hi upload kiya jayega.
-:::
-
-## Quick Links
-
-- [Poora Roadmap Dekho](/docs/roadmap)
-- [Phase 0 se Shuru Karo](/docs/foundations/)
+*Back to [MERGED-ROADMAP.md](/docs/roadmap)*

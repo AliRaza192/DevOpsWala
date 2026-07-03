@@ -1,28 +1,32 @@
 ---
-sidebar_position: 1
-title: "Cloud-Native Agent Deployment"
-description: "Agents on K8s, event-driven architecture, BullMQ, CI/CD for AI"
+sidebar_position: 19
+title: "PHASE 16: MERGE — Cloud-Native Agent Deployment + Event-Driven Architecture"
+description: "*Ongoing phase — ye actually saari zindagi continue hoti hai*"
 ---
 
-# Cloud-Native Agent Deployment
+# PHASE 16: MERGE — Cloud-Native Agent Deployment + Event-Driven Architecture
+*Ongoing phase — ye actually saari zindagi continue hoti hai*
 
-> Phase 16 — Agents on K8s, event-driven architecture, BullMQ, CI/CD for AI
+### Kya seekhna/karna hai
+- Agents ko **Docker containers** mein package karna
+- Agent workloads ko **Kubernetes** pe scale karna (multi-tenant agent serving)
+- Agent deployment pipelines (**CI/CD for AI** — eval gates pipeline mein)
+- Agent observability (**OpenTelemetry for LLM calls**, token usage tracking)
+- Multi-cloud agent deployment
+- Cost optimization for LLM API calls at scale
+- **Event-Driven Architecture: BullMQ/Redis PEHLE, Kafka BAAD MEIN** (Kafka enterprise multi-team scale k liye hai, solo-founder scale pe overkill)
 
-Ye phase abhi under development hai. Content jald hi aayega.
+### Free Resources
+| Resource | Link |
+|---|---|
+| **AgentFactory — AI-451 Course** | https://agentfactory.panaversity.org/docs/certifications |
+| **BullMQ Docs** | https://docs.bullmq.io |
+| **"Kafka Full Course"** — freeCodeCamp.org | https://www.youtube.com/@freecodecamp |
+| **FinOps Foundation (free intro)** | https://www.finops.org/introduction |
 
-## Kya Seekhna Hai
+### Meri Recommendation
+Ye phase tumhara unique selling point banega — bohot kam log Agentic AI + Kubernetes + Cloud teeno ek sath samajhte hain.
 
-- Yahan pe is phase ke key topics honge
-- Har topic ke sath hands-on exercises honge
-- Real-world incident scenarios bhi honge
+---
 
-## Status
-
-:::info
-**Content Coming Soon** — Is phase ka detailed content jald hi upload kiya jayega.
-:::
-
-## Quick Links
-
-- [Poora Roadmap Dekho](/docs/roadmap)
-- [Phase 0 se Shuru Karo](/docs/foundations/)
+*Back to [MERGED-ROADMAP.md](/docs/roadmap)*

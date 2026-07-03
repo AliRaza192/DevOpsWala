@@ -1,28 +1,45 @@
 ---
-sidebar_position: 1
-title: "Terraform + Ansible"
-description: "IaC modules, remote state, playbooks, idempotency"
+sidebar_position: 11
+title: "PHASE 8: Infrastructure as Code (Terraform) + Config Management (Ansible)"
+description: "*Est. Time: 4-6 weeks*"
 ---
 
-# Terraform + Ansible
+# PHASE 8: Infrastructure as Code (Terraform) + Config Management (Ansible)
+*Est. Time: 4-6 weeks*
 
-> Phase 8 — IaC modules, remote state, playbooks, idempotency
+### Terraform — Kya seekhna hai
+- Providers, resources, state management
+- Modules, workspaces, remote state (locking)
+- `plan`, `apply`, `destroy` lifecycle
+- Import, drift detection
 
-Ye phase abhi under development hai. Content jald hi aayega.
+### Ansible — Kya seekhna hai
+- Inventory, playbooks, roles, modules
+- Idempotency, variables, templates
 
-## Kya Seekhna Hai
+### Free Resources
+| Resource | Link |
+|---|---|
+| **"Terraform Course"** — TechWorld with Nana | https://www.youtube.com/@TechWorldwithNana |
+| **"Terraform Full Course"** — freeCodeCamp.org | https://www.youtube.com/@freecodecamp |
+| **Official Terraform Tutorials** | https://developer.hashicorp.com/terraform/tutorials |
+| **"Ansible Full Course"** — freeCodeCamp.org | https://www.youtube.com/@freecodecamp |
+| **Official Ansible Docs** | https://docs.ansible.com |
 
-- Yahan pe is phase ke key topics honge
-- Har topic ke sath hands-on exercises honge
-- Real-world incident scenarios bhi honge
+### Hands-on Checklist
+- [ ] Reusable Terraform module + remote state (S3/Azure Blob + locking)
+- [ ] `plan/apply/destroy` lifecycle on real infra
+- [ ] Ansible playbook: server config + idempotency check
+- [ ] Ansible playbook se Nginx install aur configure karo
 
-## Status
+### Incident Practice
+- Syntax/provider error fix karke re-apply
+- State conflict/drift resolve karo (`refresh`/`import`)
+- Playbook failure debug karo (idempotency check)
 
-:::info
-**Content Coming Soon** — Is phase ka detailed content jald hi upload kiya jayega.
-:::
+### Meri Recommendation
+Terraform priority do (industry standard, multi-cloud). Ansible basics-level rakho.
 
-## Quick Links
+---
 
-- [Poora Roadmap Dekho](/docs/roadmap)
-- [Phase 0 se Shuru Karo](/docs/foundations/)
+*Back to [MERGED-ROADMAP.md](/docs/roadmap)*
